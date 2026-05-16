@@ -50,3 +50,4 @@ terraform apply tfplan
 
 - [Dev](environments/dev/plan-output.txt)
 - [Prod](environments/prod/plan-output.txt)
+- [Azure-Screenshots](https://docs.google.com/document/d/1Mcy42Zk-ZnrumFKzeuVzDBG7TKwj36K5l0ert_Z-T88/edit?usp=sharing)
