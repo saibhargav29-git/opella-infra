@@ -27,7 +27,6 @@ jobs:
   terraform-dev:
     name: "Terraform Dev"
     runs-on: ubuntu-latest
-    environment: dev
 
     defaults:
       run:
@@ -42,6 +41,12 @@ jobs:
         with:
           terraform_version: ${{ env.TF_VERSION }}
 
+      - name: Setup SSH Public Key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PUBLIC_KEY }}" > ~/.ssh/id_rsa.pub
+          chmod 644 ~/.ssh/id_rsa.pub
+
       - name: Terraform Format Check
         run: terraform fmt -check -recursive
 
@@ -53,7 +58,6 @@ jobs:
 
       - name: Terraform Plan
         run: terraform plan -no-color -out=tfplan
-        continue-on-error: false
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
