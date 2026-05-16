@@ -1,0 +1,21 @@
+Acquiring state lock. This may take a few moments...
+azurerm_resource_group.this: Refreshing state... [id=/subscriptions/990d09cd-55ef-4277-b965-bc3f0520aff8/resourceGroups/rg-opella-dev-westus2]
+azurerm_public_ip.this: Refreshing state... [id=/subscriptions/990d09cd-55ef-4277-b965-bc3f0520aff8/resourceGroups/rg-opella-dev-westus2/providers/Microsoft.Network/publicIPAddresses/pip-opella-dev-vm]
+module.vnet.azurerm_network_security_group.this["snet-data"]: Refreshing state... [id=/subscriptions/990d09cd-55ef-4277-b965-bc3f0520aff8/resourceGroups/rg-opella-dev-westus2/providers/Microsoft.Network/networkSecurityGroups/nsg-snet-data]
+module.vnet.azurerm_network_security_group.this["snet-app"]: Refreshing state... [id=/subscriptions/990d09cd-55ef-4277-b965-bc3f0520aff8/resourceGroups/rg-opella-dev-westus2/providers/Microsoft.Network/networkSecurityGroups/nsg-snet-app]
+module.vnet.azurerm_virtual_network.this: Refreshing state... [id=/subscriptions/990d09cd-55ef-4277-b965-bc3f0520aff8/resourceGroups/rg-opella-dev-westus2/providers/Microsoft.Network/virtualNetworks/vnet-opella-dev-westus2]
+azurerm_storage_account.this: Refreshing state... [id=/subscriptions/990d09cd-55ef-4277-b965-bc3f0520aff8/resourceGroups/rg-opella-dev-westus2/providers/Microsoft.Storage/storageAccounts/stodevopella001]
+module.vnet.azurerm_subnet.this["snet-data"]: Refreshing state... [id=/subscriptions/990d09cd-55ef-4277-b965-bc3f0520aff8/resourceGroups/rg-opella-dev-westus2/providers/Microsoft.Network/virtualNetworks/vnet-opella-dev-westus2/subnets/snet-data]
+module.vnet.azurerm_subnet.this["snet-app"]: Refreshing state... [id=/subscriptions/990d09cd-55ef-4277-b965-bc3f0520aff8/resourceGroups/rg-opella-dev-westus2/providers/Microsoft.Network/virtualNetworks/vnet-opella-dev-westus2/subnets/snet-app]
+azurerm_network_security_rule.ssh: Refreshing state... [id=/subscriptions/990d09cd-55ef-4277-b965-bc3f0520aff8/resourceGroups/rg-opella-dev-westus2/providers/Microsoft.Network/networkSecurityGroups/nsg-snet-app/securityRules/allow-ssh]
+module.vnet.azurerm_subnet_network_security_group_association.this["snet-app"]: Refreshing state... [id=/subscriptions/990d09cd-55ef-4277-b965-bc3f0520aff8/resourceGroups/rg-opella-dev-westus2/providers/Microsoft.Network/virtualNetworks/vnet-opella-dev-westus2/subnets/snet-app]
+module.vnet.azurerm_subnet_network_security_group_association.this["snet-data"]: Refreshing state... [id=/subscriptions/990d09cd-55ef-4277-b965-bc3f0520aff8/resourceGroups/rg-opella-dev-westus2/providers/Microsoft.Network/virtualNetworks/vnet-opella-dev-westus2/subnets/snet-data]
+azurerm_network_interface.this: Refreshing state... [id=/subscriptions/990d09cd-55ef-4277-b965-bc3f0520aff8/resourceGroups/rg-opella-dev-westus2/providers/Microsoft.Network/networkInterfaces/nic-opella-dev-vm]
+azurerm_linux_virtual_machine.this: Refreshing state... [id=/subscriptions/990d09cd-55ef-4277-b965-bc3f0520aff8/resourceGroups/rg-opella-dev-westus2/providers/Microsoft.Compute/virtualMachines/vm-opella-dev]
+azurerm_storage_container.this: Refreshing state... [id=/subscriptions/990d09cd-55ef-4277-b965-bc3f0520aff8/resourceGroups/rg-opella-dev-westus2/providers/Microsoft.Storage/storageAccounts/stodevopella001/blobServices/default/containers/artifacts]
+
+No changes. Your infrastructure matches the configuration.
+
+Terraform has compared your real infrastructure against your configuration
+and found no differences, so no changes are needed.
+Releasing state lock. This may take a few moments...

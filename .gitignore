@@ -1,0 +1,22 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+*.tfvars.backup
+crash.log
+override.tf
+override.tf.json
+
+# Sensitive variable files - so i am avoiding committing these
+*.auto.tfvars
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+*.swptfplan
+plan-output.txt
+tfplan
