@@ -38,8 +38,10 @@ terraform init
 terraform plan -out=tfplan
 terraform apply tfplan
 ```
-# After cloning, run once(MANDATORY):
+
+## After cloning, run once(MANDATORY):
 pre-commit install
+
 
 ## CI/CD
 
